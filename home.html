@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home - The Haukai Restaurant</title>
+  <meta name="author" content="Jaimee Bennett">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Haukai Restaurant specializes in Māori kai / food and is based in the Bay of Islands. Reserve seats. Surround yourself in Maori culture">
+  <meta name="keywords" content="Maori, restaurants kerikeri nz, Food, Kai, Restaurant, Culture, Kerikeri, Bay of Islands, New Zealand, Reservations, Bookings.">
+  <link rel="stylesheet" href="/css/default.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-122078755-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-122078755-1');
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="bg-img">
+        <div class="header">
+          <!--top nav-->
+          <a href="home.html" class="logo">TheHaukaiRestaurant</a>
+          <div class="topNav">
+            <a href="home.html" class="active">HOME</a>
+            <a href="menu.html" >MENU</a>
+            <a href="reservations.html">RESERVATIONS</a>
+            <a href="contact.html" >CONTACT</a>
+            <a href="about.html" >ABOUT</a>
+            <a href="account.html" target="_blank">ACCOUNT</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--TODO: fix whitespace and color-->
+  <div class ="main">
+
+    <!--Banner-->
+    <div class="bannercontent">
+      <h1>Home of The Haukai Restaurant</h1>
+    </div>
+
+    <!--content-->
+    <!--image slideshow-->
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="/images/gallery/restaurant.jpg" style="width:100%" alt="A Restaurant">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="/images/gallery/Whakairo.jpg" style="width:100%" alt="Whakairo - Maori Craving ">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="/images/gallery/nightlife.jpg" style="width:100%" alt="Nightlife">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="/images/gallery/dinning.jpg" style="width:100%" alt="Dinning">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="/images/gallery/restaurant.jpg" style="width:100%" onclick="currentSlide(1)" alt="Restaurant">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/images/gallery/Whakairo.jpg" style="width:100%" onclick="currentSlide(2)" alt="Whakairo">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/images/gallery/nightlife.jpg" style="width:100%" onclick="currentSlide(3)" alt="Night Life">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="/images/gallery/dinning.jpg" style="width:100%" onclick="currentSlide(4)" alt="Dinning">
+        </div>
+      </div>
+    </div>
+    <div class = "bg-imgHome">
+<div class="hours" >
+<h2>Surround yourself in Maori culture</h2>
+<h2>Hours</h2>
+    <p>Tuesdays to Saturdays we are open between 5pm and 10pm</p>
+    <p>We are closed Sundays and Mondays</p>
+
+    <div class = "frame_container">
+    <iframe class="responsive-iframe" src="https://calendar.google.com/calendar/embed?height=400&wkst=2&bgcolor=%230B8043&ctz=Pacific%2FAuckland&showTz=0&showTabs=0&showCalendars=0&showPrint=0&hl=en_GB&src=c2pxcGwzM2lxNm01dGNmOHNiYTQyYW1zYWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23795548&color=%230B8043" title="calender" style="border-width:0"></iframe>
+    </div>
+  </div>
+
+
+  </div>
+
+  </div>
+    <!-- Footer -->
+  <footer class="footer">
+
+      <!--bottom nav-->
+      <div class="btNavbar" id="btNavbar">
+        <a href="home.html" class="active">Home</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html" >Contact</a>
+        <a href="policies.html" target="_blank">Policies</a>
+        <!--font social media icons -->
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"> Facebook</a>
+        <a href="https://twitter.com" target="_blank" class="fa fa-twitter"> Twitter</a>
+        <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"> Instagram</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunctionBNav()">&#9776;</a>
+
+      </div>
+
+    <!-- End footer -->
+  </footer>
+  <!-- start Script -->
+  <script>
+    /* function for top nav bar */
+    function myFunctionHeader() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+
+    /*function for bottom nav bar */
+    function myFunctionBNav() {
+      var x = document.getElementById("btNavbar");
+      if (x.className === "btNavbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "btNavbar";
+      }
+    }
+
+
+    /* Slideshow*/
+
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+  </script>
+  <!-- finish Script -->
+</body>
+</html>
